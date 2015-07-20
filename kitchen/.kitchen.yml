@@ -6,11 +6,11 @@ provisioner:
   name: chef_solo
 
 platforms:
-  
-  - name: centos65
+
+  - name: chef/ubuntu-14.04
     driver:
-      box: learningchef/centos65
-      box_url: learningchef/centos65
+      box: chef/ubuntu-14.04    
+      box_url: /root/.vagrant.d/boxes/chef-VAGRANTSLASH-ubuntu-14.04
 
 # - name: centos-7.1
 
@@ -18,3 +18,4 @@ suites:
   - name: default
     run_list:
     attributes:
+
